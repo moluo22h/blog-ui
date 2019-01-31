@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-hot-label',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotLabelComponent implements OnInit {
 
-  constructor() { }
+  labels: string[] = ['css', 'java', 'pathon', 'go'];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

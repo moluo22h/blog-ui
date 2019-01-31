@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-hot-article',
@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotArticleComponent implements OnInit {
 
-  constructor() { }
+  articles: string[] = [
+    'cccsssss',
+    'cccsssss',
+    'cccsssss',
+    'cccsssss'
+  ];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
