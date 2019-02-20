@@ -1,0 +1,32 @@
+.my-panel {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.panel-heading.my-panel{
+  padding-bottom: unset;
+}
+
+.panel-footer.my-panel{
+  padding-top: unset;
+}
+
+.my-icon{
+  line-height: 40px;
+  height: 40px;
+}
+
+.my-icon > img{
+  float: left;
+  height: 100%;
+}
+
+.my-icon > span,p{
+  margin-left: 10px;
+}
+
+.my-ceter{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
