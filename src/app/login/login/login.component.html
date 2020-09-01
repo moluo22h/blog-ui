@@ -1,3 +1,4 @@
+<!--
 <div class="container">
 
   <form class="form-signin">
@@ -17,3 +18,21 @@
 </div>
 
 <button class="btn btn-lg btn-primary btn-block" (click)="getDatas()">test</button>
+-->
+
+<form [formGroup]="loginForm" class="form-group" action="">
+  <div class="form-group">
+    <label for="">用户名</label>
+    <input formControlName="userName" class="form-control" type="text" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="">密码</label>
+    <input formControlName="password"  class="form-control" type="password" placeholder="">
+  </div>
+  <div class="text-right">
+    <button class="btn btn-primary" type="submit">登录</button>
+    <button class="btn btn-danger" data-dismiss="modal">取消</button>
+  </div>
+  <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+</form>
+

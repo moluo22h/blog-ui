@@ -12,6 +12,7 @@
     <ul class="nav navbar-nav">
       <li><a href="#">最新</a></li>
       <li><a href="#">最热&ensp;<span class="badge">23</span></a></li>
+      <li><a href="/publish">发布</a></li>
       <!--<li><a href="#">我的博客</a></li>-->
     </ul>
 
@@ -23,9 +24,50 @@
     </form>
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="/login">登录</a></li>
-      <li><a href="/register">注册</a></li>
+      <li><a href="/admin">管理</a></li>
+      <li><a href="" data-toggle="modal" data-target="#login">登录</a></li>
+      <li><a href="" data-toggle="modal" data-target="#register">注册</a></li>
     </ul>
   </div>
 </nav>
+
+
+<!-- 注册窗口 -->
+<div id="register" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-title">
+        <h1 class="text-center">注册</h1>
+      </div>
+      <div class="modal-body">
+        <app-register></app-register>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 登录窗口 -->
+<div id="login" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-title">
+        <h1 class="text-center">登录</h1>
+      </div>
+      <div class="modal-body">
+        <app-login></app-login>
+      </div>
+    </div>
+  </div>
+</div>
+
 

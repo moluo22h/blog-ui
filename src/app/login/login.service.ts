@@ -11,7 +11,11 @@ export class LoginService {
   }
 
   getDatas(): Observable<any> {
-    return this.http.get('/user/me');
+    return this.http.get('http://localhost:9000/user/me');
+  }
+
+  addUser(data): Observable<any> {
+    return this.http.post('/user', data);
   }
 
 }

@@ -10,7 +10,8 @@ import {LoginModule} from '../login/login.module';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    LoginModule
   ],
   exports: [
     NavbarComponent,

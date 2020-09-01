@@ -1,3 +1,108 @@
-<p>
-  register works!
-</p>
+<!--
+<div class="container">
+  <form [formGroup]="registerForm" class="form-horizontal form-signin">
+    <div class="form-group">
+      <h2 class="form-signin-heading">注册</h2>
+      <label for="userName" class="col-sm-4 control-label">用户名</label>
+      <div class="col-sm-20">
+        <input formControlName="userName" type="text" class="form-control" id="userName" placeholder="请输入用户名">
+        <div *ngIf="userName.invalid && (userName.dirty || userName.touched)" class="alert alert-danger">
+          <div *ngIf="userName.errors.required">
+            不能为空
+          </div>
+          <div *ngIf="userName.errors.pattern">
+            只能支持中文、字母、数字和下划线
+          </div>
+          <div *ngIf="userName.errors.maxlength">
+            最大允许长度为10
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="col-sm-4 control-label">邮箱</label>
+      <div class="col-sm-20">
+        <input formControlName="email" type="email" class="form-control" id="email" placeholder="请输入邮箱">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+          <div *ngIf="email.errors.required">
+            不能为空
+          </div>
+          <div *ngIf="email.errors.email">
+            邮箱格式不正确
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div formGroupName="passwordGroup">
+      <div class="form-group">
+        <label for="password" class="col-sm-4 control-label">密码</label>
+        <div class="col-sm-20">
+          <input formControlName="password" type="password" class="form-control" id="password" placeholder="请输入密码">
+          <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+            <div *ngIf="password.errors.required">
+              不能为空
+            </div>
+            <div *ngIf="password.errors.minlength">
+              长度至少为6
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password2" class="col-sm-4 control-label">确认密码</label>
+        <div class="col-sm-20">
+          <input formControlName="password2" type="password" class="form-control" id="password2" placeholder="请确认密码">
+          <div *ngIf="password2.invalid && (password2.dirty || password2.touched)" class="alert alert-danger">
+            <div *ngIf="password2.errors.required">
+              不能为空
+            </div>
+            <div *ngIf="password2.errors.minlength">
+              长度至少为6
+            </div>
+          </div>
+          <div *ngIf="password.valid&&password2.valid&&passwordGroup.hasError('passwordError')"
+               class="alert alert-danger">
+            密码不一致
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-20">
+        <button (click)="submit()" type="submit" class="btn btn-default">注册</button>
+      </div>
+    </div>
+
+    <p>{{registerForm.value|json}}</p>
+
+  </form>
+</div>-->
+
+<form class="form-group" action="">
+  <div class="form-group">
+    <label for="">用户名</label>
+    <input class="form-control" type="text" placeholder="6-15位字母或数字">
+  </div>
+  <div class="form-group">
+    <label for="">密码</label>
+    <input class="form-control" type="password" placeholder="至少6位字母或数字">
+  </div>
+  <div class="form-group">
+    <label for="">再次输入密码</label>
+    <input class="form-control" type="password" placeholder="至少6位字母或数字">
+  </div>
+  <div class="form-group">
+    <label for="">邮箱</label>
+    <input class="form-control" type="email" placeholder="例如:123@123.com">
+  </div>
+  <div class="text-right">
+    <button class="btn btn-primary" type="submit">提交</button>
+    <button class="btn btn-danger" data-dismiss="modal">取消</button>
+  </div>
+  <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+</form>
